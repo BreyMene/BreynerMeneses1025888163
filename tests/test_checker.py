@@ -11,6 +11,7 @@ from app.checker import PasswordChecker
     ("Ab1@5678", "Fuerte"),        # Justo 8 caracteres, cumple todo
     ("        ", "Débil"),         # Solo espacios
     ("123456", "Débil"),           # Solo dígitos
+    ("a@a222fJdska", "Fuerte")     # Largo y cumple todos los criterios
 ])
 def test_password_strength(password, expected):
     checker = PasswordChecker(password)
