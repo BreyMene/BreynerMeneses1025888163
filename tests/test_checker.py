@@ -10,6 +10,7 @@ from app.checker import PasswordChecker
     ("ABCD@#$%", "Media"),         # Mayúsculas + símbolos
     ("Ab1@5678", "Fuerte"),        # Justo 8 caracteres, cumple todo
     ("        ", "Débil"),         # Solo espacios
+    ("123456", "Débil"),           # Solo dígitos
 ])
 def test_password_strength(password, expected):
     checker = PasswordChecker(password)
