@@ -55,7 +55,7 @@ def main():
     password = input("🔐 Ingrese su contraseña: ")
     checker = PasswordChecker(password)
     strength = checker.evaluate_strength()
-    print(f"\n✅ Clasificación: {strength}")
+    print(f"\n✅ Su Contraseña es: {strength}")
 
 
 if __name__ == "__main__":
